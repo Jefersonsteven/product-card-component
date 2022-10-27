@@ -111,6 +111,11 @@ body {
     cursor: pointer;
 }
 
+
+.container-card .info > button:hover {
+    background-color: hsla(157, 43%, 18%, 1);
+}
+
 .container-card .info > button p {
     font-family: var(--font);
     font-weight: 700;
@@ -138,22 +143,14 @@ body {
         height: 450px;
         padding: 0 28.5px 0 28.5px;
         margin-top: 0;
+    }
+
+    .container-card .info > button {
+        width: 236px;
+        margin: 0 10px 0 10px;
+    }
+
+    .container-card .info > div  {
+        width: 80%;
+    }
 }
-
-.container-card .info > button {
-    width: 236px;
-    margin: 0 10px 0 10px;
-}
-
-.container-card .info > div  {
-    width: 80%;
-}
-
-
-
-
- 
- /* 
-- Mobile: 375px
-- Desktop: 1440px 
-*/
