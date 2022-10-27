@@ -21,13 +21,133 @@ html {
     font-family: var(--font);
 }
 
-body { 
-    font-size: 1.6rem;
+body {
+    width: 100vw;
+    height: 100vh; 
+    font-size: 1.4rem;
     background-color: var(--Cream);
+    display: grid;
+    place-items: center;
 }
 
+.container-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 611px;
+    width: 343px;
+    background-color: var(--White);
+    border-radius: 10px 10px 10px 10px;
+}
 
+.container-card .img {
+    height: 240px;
+    width: 343px;
+    border-radius: 10px 10px 0 0;
+    background-size: contain;
+    background-image: url(./images/image-product-mobile.jpg);
+}
 
+.container-card .info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 371px;
+    width: 85%;
+    justify-content: space-evenly;
+}
+
+.container-card .info > h5 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 14.63px;
+    letter-spacing: 5px;
+    color: var(--Dark-grayish-blue);
+}
+
+.container-card .info > h1 {
+    font-family: var(--font-title);
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 32px;
+    color: var(--Very-dark-blue);
+}
+
+.container-card .info > p {
+    font-weight: 500;
+    line-height: 23px;
+    color: var(--Dark-grayish-blue);
+}
+
+.container-card .info > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 68%;
+}
+
+.container-card .info > div p:nth-child(1) {
+    font-family: var(--font-title);
+    font-weight: 700;
+    font-size: 3.2rem;
+    color: var(--Dark-cyan);
+}
+
+.container-card .info > div p:nth-child(2) {
+    color: var(--Dark-grayish-blue);
+    text-decoration: line-through;
+}
+
+.container-card .info button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 295px;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    cursor: pointer;
+}
+
+.container-card .info > button p {
+    font-family: var(--font);
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+@media (min-width: 1200px){
+    .container-card {
+        flex-direction: row;
+        width: 600px;
+        height: 450px;
+    }
+
+    .container-card .img {
+        width: 300px;
+        height: 450px;
+        background-image: url(./images/image-product-desktop.jpg);
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .container-card .info {
+        width: 300px;
+        height: 450px;
+        padding: 0 28.5px 0 28.5px;
+        margin-top: 0;
+}
+
+.container-card .info > button {
+    width: 236px;
+    margin: 0 10px 0 10px;
+}
+
+.container-card .info > div  {
+    width: 80%;
+}
 
 
 
